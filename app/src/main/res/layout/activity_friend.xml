@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.FriendActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+            <ImageView
+                android:id="@+id/agricultural_expert_back_iv"
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_back_normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="好友列表"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="10dp"
+            android:background="@mipmap/icon_add_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="新的朋友"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+    <com.example.administrator.myapplication.utils.IndexBar
+        android:id="@+id/index_bar"
+        android:layout_width="30dp"
+        app:normalColor="@color/green"
+        app:selecColor="@color/green"
+        app:indexSize="14sp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tv_letter"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tv_index_bg"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/largeTextSize"
+        android:visibility="invisible"/>
+    </RelativeLayout>
+
+</LinearLayout>

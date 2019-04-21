@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/knowledge_menu_pro_normal_wat_iv"
+        android:layout_width="67dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/knowledge_menu_pro_normal_wat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="12dp"
+        android:text="姓名" />
+
+    <TextView
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:id="@+id/knowledge_menu_pro_normal_wat_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/knowledge_menu_pro_normal_wat_name"
+        android:layout_marginTop="38dp"
+        android:text="简介" />
+
+    <TextView
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
+        android:id="@+id/knowledge_menu_pro_normal_wat_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/knowledge_menu_pro_normal_wat_name"
+        android:layout_marginEnd="80dp"
+        android:text="岗位专家" />
+
+    <TextView
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:background="@drawable/ic_knowledge_menu_pro_rice_tv"
+        android:id="@+id/knowledge_menu_pro_normal_wat_inn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/knowledge_menu_pro_normal_wat_name"
+        android:layout_marginEnd="13dp"
+        android:text="经济研究" />
+</RelativeLayout>

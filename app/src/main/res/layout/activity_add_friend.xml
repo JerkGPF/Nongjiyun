@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebebeb"
+    tools:context=".activity.AddFriendActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/springgreen"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/myshare_back_iv"
+                android:layout_width="18dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:src="@mipmap/btn_back_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:text="添加朋友"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <EditText
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:hint="  搜索"
+        android:background="@drawable/search"
+        android:drawableLeft="@mipmap/icon_search_black"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <RelativeLayout
+        android:id="@+id/friend_relat"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/icon_default_head"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="朱金梅"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他"
+            android:textColor="#000000"
+            android:layout_marginLeft="60dp" />
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/btn_into_normal"
+            android:layout_width="15dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/icon_default_head"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张静江"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="农技推广人员"
+            android:textColor="#000000"
+            android:layout_marginLeft="60dp" />
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/btn_into_normal"
+            android:layout_width="15dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/icon_default_head"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张璇"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="农技推广人员"
+            android:textColor="#000000"
+            android:layout_marginLeft="60dp" />
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/btn_into_normal"
+            android:layout_width="15dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/icon_default_head"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张海军"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家庭农场"
+            android:textColor="#000000"
+            android:layout_marginLeft="60dp" />
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/btn_into_normal"
+            android:layout_width="15dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/icon_default_head"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张迎春"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合作社"
+            android:textColor="#000000"
+            android:layout_marginLeft="60dp" />
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/btn_into_normal"
+            android:layout_width="15dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>

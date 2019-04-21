@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Home_SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/springgreen">
+            <ImageView
+                android:id="@+id/home_edit_search_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_36dp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/home_et"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:hint="  请输入搜索内容                                            "
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/icon_search_black"
+                android:background="@drawable/search" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEB"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFF"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="大家热搜"
+                android:textSize="15dp"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/springgreen" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="#EBEBEB">
+            <TextView
+                android:id="@+id/home_search_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="  稻  "
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/search"/>
+            <TextView
+                android:id="@+id/home_search_wheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="  麦  "
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/search"/>
+            <TextView
+                android:id="@+id/home_search_expert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="  专家发布  "
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/search"/>
+            <TextView
+                android:id="@+id/home_search_Grape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="  葡萄  "
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/search"/>
+            <TextView
+                android:id="@+id/home_search_protection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="  植保信息  "
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/search"/>
+            <TextView
+                android:id="@+id/caomei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  草莓  "
+                android:textSize="15dp"
+                android:background="@drawable/search"
+                android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#EBEBEB"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/home_search_Scab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="  赤霉病  "
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/search"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="  西瓜  "
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/search"/>
+            <TextView
+                android:id="@+id/home_search_yuyang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:text="  育秧  "
+                android:background="@drawable/search"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

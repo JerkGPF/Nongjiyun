@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+        <TextView
+            android:background="@drawable/dialog"
+            android:id="@+id/dialog_photo"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="拍照"
+            android:textColor="#fff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EBEBEB" />
+        <TextView
+            android:background="@drawable/dialog"
+            android:id="@+id/dialog_picture"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="图库"
+            android:textColor="#fff" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <TextView
+        android:textColor="@color/green"
+        android:id="@+id/dialog_photo_cancel"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="取消" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+</LinearLayout>

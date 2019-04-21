@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.BrandDetailActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/springgreen"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/agricultural_expert_back_iv"
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_back_normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="150dp"
+                android:text="详情"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bichonglin" />
+    <TextView
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="吡虫啉" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:text="来源：0514-86739571"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true" />
+    <View
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <RadioButton
+        android:padding="10dp"
+        android:background="@drawable/brand_detail_button"
+        android:textColor="@color/green"
+        android:layout_gravity="center"
+        android:drawableLeft="@mipmap/icon_telephone"
+        android:text="  详细价格请咨询客服             "
+        android:button="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <View
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@mipmap/icon_personal_08"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:text="商品详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <TextView
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:text="吡虫啉是硝基亚甲基类内吸杀虫剂,是烟碱乙酰胆碱受体的作用体，干扰害虫运动神经系统使化学信号传递失灵，无交互抗性问题。用于防治刺吸式口器害虫及其抗性品系。吡虫啉是新一代氯代尼古丁杀虫剂，具有广谱、高效、低毒、低残留，害虫不易产生抗性，对人、畜、植物和天敌安全等特点，并有触杀、胃毒和内吸多重药效。害虫接触药剂后，中枢神经正常传导受阻，使其麻痹死亡。速效性好，药后1天即有较高的防效，残留期长达25天左右。药效和温度呈正相关，温度高，杀虫效果好。主要用于防治刺吸式口器害虫。主要用于防治刺吸式口器害虫（可与啶虫脒低高温轮换使用--气温高用吡虫啉，气温低用啶虫脒），防治如蚜虫、飞虱、粉虱、叶蝉、蓟马；对鞘翅目、双翅目和鳞翅目的某些害虫，如稻象甲、稻负泥虫、潜叶蛾等也有效。但对线虫和红蜘蛛无效。可用于水稻、小麦、玉米、棉花、马铃薯、蔬菜、甜菜、果树等作物。由于它的优良内吸性，特别适于用种子处理和撒颗粒剂方式施药。一般亩用有效成分3~10克，兑水喷雾或拌种。安全间隔期20天。施药时注意防护，防止接触皮肤和吸入药粉、药液，用药后要及时用清水洗洁暴露部位。不要与碱性农药混用。不宜在强阳光下喷雾，以免降低药效。
+        防治绣线菊蚜、苹果瘤蚜、桃蚜、梨木虱、卷叶蛾、粉虱、斑潜蝇等害虫，可用10%吡虫啉4000～6000倍液喷雾，或用5%吡虫啉乳油2000～3000倍液喷雾。 防治蟑螂：可以选择神农2.1%灭蟑螂胶饵。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.administrator.myapplication"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-5'
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    //悬浮按钮
+    implementation 'com.melnykov:floatingactionbutton:1.3.0'
+    //没有使用特殊Header，可以不加这行
+    implementation 'com.jude:rollviewpager:1.2.9'
+    implementation 'com.github.Rowandjj:VerticalBannerView:1.0'
+    //添加播放视频的依赖
+    implementation 'cn.jzvd:jiaozivideoplayer:6.2.9'
+    implementation 'com.android.support:design:26.1.0'
+    //xutils
+    implementation 'org.xutils:xutils:3.5.0'
+    implementation 'com.contrarywind:Android-PickerView:3.2.5'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    //二维码扫描
+    implementation 'com.google.zxing:core:3.3.0'
+
+    //butterknife注解框架
+    implementation 'com.jakewharton:butterknife:8.2.1'
+    //照片裁剪
+    implementation 'com.jiechic.library:xUtils:2.6.14'
+    implementation 'de.hdodenhof:circleimageview:2.0.0'
+    implementation files('libs/open_sdk_r5990_lite.jar')
+    implementation files('libs/pinyin4j-2.5.0.jar')
+}
+apply plugin: 'com.mob.sdk'
+MobSDK {
+    appKey "258ff07732824"
+    appSecret "72e13d51d5e0aaab9e66cf47b4b6124a"
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            SinaWeibo {
+                appKey "568898243"
+                appSecret "38a4f8204cc784f81f9f0daaf31e02e3"
+                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient false
+            }
+            Wechat {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+            }
+            QQ {
+                appId "1106831363"
+                appKey "5NEm7DcTCapZmoyn"
+            }
+            Facebook {
+                appKey "1412473428822331"
+                appSecret "a42f4f3f867dc947b9ed6020c2e93558"
+                callbackUri "https://mob.com"
+            }
+        }
+    }
+
+}

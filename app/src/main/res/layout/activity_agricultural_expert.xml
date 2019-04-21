@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myapplication.view.agricultural_expert">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/springgreen"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/agricultural_expert_back_iv"
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_back_normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="150dp"
+                android:text="农业专家"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:background="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/home_agricultural_of_expert_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFA500">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_expert"
+            android:text="专家最新发布"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="10dp" />
+
+        <com.example.administrator.myapplication.utils.FlickerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:text="  详情  >" />
+    </LinearLayout>
+    <View
+        android:background="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <GridView
+        android:id="@+id/home_agricultural_of_expert_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:background="#EBEBEB">
+    </GridView>
+</LinearLayout>

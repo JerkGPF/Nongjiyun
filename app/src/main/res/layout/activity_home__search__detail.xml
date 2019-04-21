@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.Home_Search_DetailActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/springgreen">
+            <ImageView
+                android:id="@+id/home_edit_search_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_36dp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:focusable="false"
+                android:id="@+id/home_et"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:hint="   请输入搜索内容                                             "
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/icon_search_black"
+                android:background="@drawable/search" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#FFF">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_shouye"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:tabMode="scrollable"
+            app:tabIndicatorHeight="2dp"
+            app:tabIndicatorColor="@color/springgreen">
+        </android.support.design.widget.TabLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:background="#fff"
+        android:id="@+id/viewpager_ShouYe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

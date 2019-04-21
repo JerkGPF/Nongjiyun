@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WangcailinActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/wangcailin_toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/springgreen">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/springgreen"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/wangcailin_back_iv"
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_back_normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="140dp"
+                android:text="王才林"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/wangcailin_toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_alignParentTop="true"
+        android:background="#EBEBEB" />
+
+    <ImageView
+        android:id="@+id/wangcailin_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/pro_head"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/wangcailin_name"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="15dp"
+        android:text="王才林"
+        android:textColor="@color/black"
+        android:layout_marginLeft="81dp"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/wangcailin_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="50dp"
+        android:text="问题：585"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="81dp" />
+
+    <TextView
+        android:background="@drawable/search"
+        android:textColor="#4876FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="15dp"
+        android:text=" 省级专家 "
+        android:layout_marginRight="45dp"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:background="@drawable/red"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="  水稻  "
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/wangcailin_head"
+        android:background="#EBEBEB"
+        android:layout_alignParentLeft="true" />
+
+    <RadioButton
+        android:id="@+id/wangcailin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/wangcailin_head"
+        android:button="@null"
+        android:drawableLeft="@mipmap/wangcailin_radiobutton"
+        android:padding="5dp"
+        android:text="专家介绍"
+        android:layout_alignParentLeft="true" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/wangcailin"
+        android:background="#EBEBEB"
+        android:layout_alignParentLeft="true" />
+    <LinearLayout
+        android:id="@+id/wangcailin_liner"
+        android:padding="5dp"
+        android:layout_below="@+id/view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="职称：研究员"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单位：江苏省农业科学院"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="邮箱：clwang@jaas.ac.cn"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="专业方向：水稻新品种选育与示范推广"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@+id/wangcailin_liner"
+        android:background="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <LinearLayout
+        android:id="@+id/wangcailin_liner1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableLeft="@mipmap/wangcailin_lvli"
+        android:text="履历介绍" />
+
+        <ImageView
+            android:id="@+id/wangcailin_iv_into"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@mipmap/wangcailin_into" />
+</LinearLayout>
+    <View
+        android:id="@+id/view2"
+        android:layout_below="@+id/wangcailin_liner1"
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/wangcailin_liner2"
+        android:layout_below="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@mipmap/wangcailin_dayi"
+            android:text="专家答疑" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多>>"/>
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/wangcailin_liner2"
+        android:id="@+id/view3"
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:id="@+id/wangcailin_liner3"
+        android:padding="5dp"
+        android:layout_below="@+id/view3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="图片两种情况，图一是一窝发黄，图二整盘秧根萎缩，根系不长，请问王教授是什么原因"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="2018-06-11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#ebebeb"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <TextView
+            android:text="您好"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="2018-06-10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#ebebeb"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <TextView
+            android:text="图片两种情况，图一是一窝发黄，图二整盘秧根萎缩，根系不长，请问王教授是什么原因"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="2018-06-10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/green"
+                android:padding="5dp"
+                android:text="已回答"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="#ebebeb"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <TextView
+            android:text="图片两种情况，图一是一窝发黄，图二整盘秧根萎缩，根系不长，请问王教授是什么原因"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="2018-06-10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/green"
+                android:padding="5dp"
+                android:text="已回答"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="#ebebeb"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <TextView
+            android:text="图片两种情况，图一是一窝发黄，图二整盘秧根萎缩，根系不长，请问王教授是什么原因"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="2018-06-10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/green"
+                android:padding="5dp"
+                android:text="已回答"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="#ebebeb"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+    </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <View
+        android:layout_above="@+id/wangcailin_liner4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ebebeb" />
+    <LinearLayout
+        android:background="#fff"
+        android:id="@+id/wangcailin_liner4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+        <Button
+            android:id="@+id/wangcailin_ask"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape01"
+            android:text="咨询专家"
+            android:textColor="#fff" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

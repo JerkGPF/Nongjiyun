@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    tools:context=".activity.Knowledge_Menu_Pro_WatActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#ff2dc667"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/knowledge_menu_pro_wat_bt"
+                    android:layout_width="16dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/btn_back_normal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="西甜瓜产业技术体系"
+                    android:textColor="#F0F8FF"
+                    android:textSize="25sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="#fff"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="首席专家"
+                    android:textColor="@color/colorAccent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <com.example.administrator.myapplication.view.MyListView
+                    android:id="@+id/knowledge_menu_pro_main_wat_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.example.administrator.myapplication.view.MyListView>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="#fff"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="岗位专家"
+                    android:textColor="@color/colorPrimary" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <com.example.administrator.myapplication.view.MyListView
+                    android:dividerHeight="4dp"
+                    android:id="@+id/knowledge_menu_pro_normal_wat_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.example.administrator.myapplication.view.MyListView>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="#fff"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="基地主任"
+                    android:textColor="#4876FF" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <com.example.administrator.myapplication.view.MyListView
+                    android:dividerHeight="4dp"
+                    android:id="@+id/knowledge_menu_pro_dir_wat_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.example.administrator.myapplication.view.MyListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

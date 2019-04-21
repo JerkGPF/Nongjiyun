@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Home_Video_TJFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:background="@mipmap/video_tj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <ImageView
+        android:background="@mipmap/video_tj2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <com.example.administrator.myapplication.view.GrideViewScroll
+        android:id="@+id/home_video_gv"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.administrator.myapplication.view.GrideViewScroll>
+</LinearLayout>
+    </ScrollView>
+</FrameLayout>

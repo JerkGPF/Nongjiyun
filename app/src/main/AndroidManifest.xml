@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:uses-permissionandroid="http://schemas.android.com/apk/res-auto"
+    package="com.example.administrator.myapplication">
+
+    <!-- 获取当前地理位置要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 仅网络定位的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 网络访问的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权�? -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 摄像头权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 自动聚焦权限 -->
+    <application
+        android:name=".utils.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_snt"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".zxing.activity.CaptureActivity" />
+        <activity android:name=".activity.RegisterInfoActivity" />
+        <activity android:name=".activity.ReisterActivity" />
+        <activity android:name=".fragment.HomeFragment_notice" />
+        <activity android:name=".activity.Activity_login" />
+        <activity android:name=".activity.Home_MediaPlayer" />
+        <activity android:name=".view.Professional_cooperation" />
+        <activity android:name=".view.timeof_farming" />
+        <activity android:name=".view.Agricultural_of_technology" />
+        <activity android:name=".view.agricultural_expert" />
+        <activity android:name=".view.Agricultural_policy" />
+        <activity android:name=".view.Science_and_technology_special" />
+        <activity android:name=".view.Market_quotations" />
+        <activity android:name=".view.more" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".view.Home_technology_gridview_Specialdiet" />
+        <activity android:name=".fragment.Home_Edit_Search" />
+        <activity android:name=".fragment.Home_System_notification" />
+        <activity android:name=".fragment.Home_Personal_information" />
+        <activity android:name=".fragment.Home_notice_system_notice_item1" />
+        <activity android:name=".fragment.HomeEditSearch" />
+        <activity android:name=".fragment.Home_Details" />
+        <activity android:name=".view.Life_service" />
+        <activity android:name=".view.Cloud_intelligence" />
+        <activity android:name=".view.SupplyandEmand_information" />
+        <activity android:name=".activity.Knowledge_Menu_AnimalActivity" />
+        <activity android:name=".activity.Knowledge_Menu_ProfessorActivity" />
+        <activity android:name=".activity.QuickQuestionSubmission" />
+        <activity android:name=".activity.Knowledge_Menu_TecActivity" />
+        <activity android:name=".activity.Knowledge_Menu_CropActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Animal_PigActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Animal_Pig_DetailActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Animal_SheepActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Animal_EggActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Animal_ChickenActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Animal_DuckActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Animal_GooseActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Animal_DoveActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Animal_RabbitActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Animal_CattleActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Pro_RiceActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Pro_WheatActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Pro_TLTActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Pro_VegActivity" />
+        <activity android:name=".activity.Knowledge_Menu_Pro_WatActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".activity.MyDateChooseType" />
+        <activity android:name=".view.Exemplary_typical" />
+        <activity android:name=".view.Home_technology_gridview_rice" />
+        <activity android:name=".activity.Boot_page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Home_HeadLine" />
+        <activity android:name=".activity.Home_Trends" />
+        <activity android:name=".activity.Home_video" />
+        <activity android:name=".fragment.Hme_Notice_Personal_Fragment_login" />
+        <activity android:name=".view.Home_technology_gridview_Wheat" />
+        <activity android:name=".activity.Home_Agricultural_Expert_New" />
+        <activity android:name=".activity.Home_Agricultural_Rice_Expert" />
+        <activity android:name=".activity.Register_Person_ChooseActivity" />
+        <activity android:name=".activity.Register_Local_ChooseActivity" />
+        <activity android:name=".activity.My_SettingActivity" />
+        <activity android:name=".activity.ForgetPassActivity" />
+        <activity android:name=".activity.RestPassActivity" />
+        <activity android:name=".activity.MyDataActivity" />
+        <activity android:name=".activity.MyShareActivity" />
+        <activity android:name=".activity.Setting_AboutActivity" />
+        <activity android:name=".activity.MyDataNickname" />
+        <activity android:name=".activity.MyDataCompany" />
+        <activity android:name=".activity.ResetPassword" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.gpf.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.My_FeedBackActivity" />
+
+        <!-- 注册SDKActivity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106831363" /> <!-- 开放平台获取的APPID -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.AdvertiseActivity" />
+        <activity android:name=".activity.WeatherActivity" />
+        <activity android:name=".activity.Home_SearchActivity" />
+        <activity android:name=".activity.Home_Search_DetailActivity" />
+        <activity android:name=".activity.WangcailinActivity" />
+        <activity android:name=".activity.BrandActivity" />
+        <activity android:name=".activity.BrandDetailActivity" />
+        <activity android:name=".activity.BrandCompanyDetailActivity" />
+        <activity android:name=".activity.SupplyInformationActivity" />
+        <activity android:name=".activity.SupplyInfActivity" />
+        <activity android:name=".activity.SupplyInformationBuyActivity" />
+        <activity android:name=".activity.Supply_Inf_Sell_DetailActivity" />
+        <activity android:name=".activity.Supply_Inf_Buy_DetailActivity" />
+        <activity android:name=".activity.HuiHuaActivity" />
+        <activity android:name=".activity.FriendActivity" />
+        <activity android:name=".activity.MyEWMActivity" />
+        <activity android:name=".activity.My_PushActivity" />
+        <activity android:name=".activity.My_Push_LogActivity" />
+        <activity android:name=".activity.My_AnswerActivity" />
+        <activity android:name=".activity.MyCollectionActivity" />
+        <activity android:name=".activity.MyAskActivity" />
+        <activity android:name=".activity.Price_InfActivity" />
+        <activity android:name=".activity.Exchenge_DetailActivity" />
+        <activity android:name=".activity.EXPushActivity" />
+        <activity android:name=".activity.Ask_DetailActivity" />
+        <activity android:name=".activity.AddFriendActivity" />
+        <activity android:name=".activity.ScanActivity" />
+        <activity android:name=".activity.Add_Friend_Activity" />
+        <activity android:name=".activity.QuestionTypeActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BrandZhongZiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/brand_liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="农资精选"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多>>" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/brand_liner"
+                android:background="#ebebeb" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="60dp"
+                android:background="@mipmap/bichonglin"
+                android:layout_marginLeft="13dp"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:padding="5dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="华梗5号（苏审稻20050..." />
+
+            <TextView
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="200dp"
+                android:text="来源：江苏省大华种业集团有限
+ 公司淮海分公司"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:layout_marginTop="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="13dp"
+                android:background="@mipmap/bichonglin"
+                android:layout_marginRight="13dp"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:singleLine="true"
+                android:layout_marginTop="170dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginLeft="250dp"
+                android:text="连糯1号（苏审稻2014" />
+
+            <TextView
+                android:textSize="12dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="来源：江苏省大华种业集团有限公司淮海分公司" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="250dp"
+                android:background="@mipmap/bichonglin"
+                android:layout_marginLeft="13dp"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:singleLine="true"
+                android:padding="5dp"
+                android:layout_marginTop="360dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大华香糯（苏审稻2001..." />
+
+            <TextView
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="390dp"
+                android:text="来源：江苏省大华种业集团有限
+ 公司淮海分公司"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:layout_marginTop="250dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="13dp"
+                android:background="@mipmap/bichonglin"
+                android:layout_marginRight="13dp"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:singleLine="true"
+                android:layout_marginTop="360dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginLeft="250dp"
+                android:text="淮麦35" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:textSize="12dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="390dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="来源：江苏省大华种业集团有限公司淮海分公司" />
+            <View
+                android:id="@+id/brand_view"
+                android:layout_below="@+id/textView"
+                android:background="#ebebeb"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <LinearLayout
+                android:id="@+id/brand_liner2"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/brand_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="企业推荐"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多>>" />
+            </LinearLayout>
+            <ImageView
+                android:layout_below="@+id/brand_liner2"
+                android:id="@+id/brand_iv1"
+                android:background="@mipmap/science1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/brand_iv2"
+                android:layout_below="@+id/brand_iv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/science2"/>
+            <ImageView
+                android:id="@+id/brand_iv3"
+                android:layout_below="@+id/brand_iv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/science3"/>
+            <ImageView
+                android:id="@+id/brand_iv4"
+                android:layout_below="@+id/brand_iv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/science4"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
